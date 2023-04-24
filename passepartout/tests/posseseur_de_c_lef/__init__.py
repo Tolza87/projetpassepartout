@@ -1,0 +1,5 @@
+from .posseseur_de_c_lef_delete_test import PosseseurDeCLefDeleteTestCase
+from .posseseur_de_c_lef_update_test import PosseseurDeCLefUpdateTestCase
+from .posseseur_de_c_lef_detail_test import PosseseurDeCLefDetailTestCase
+from .posseseur_de_c_lef_create_test import PosseseurDeCLefCreateTestCase
+from .posseseur_de_c_lef_list_test import PosseseurDeCLefListTestCase

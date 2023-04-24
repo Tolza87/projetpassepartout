@@ -1,0 +1,5 @@
+from .exemplaire_delete_test import ExemplaireDeleteTestCase
+from .exemplaire_update_test import ExemplaireUpdateTestCase
+from .exemplaire_detail_test import ExemplaireDetailTestCase
+from .exemplaire_create_test import ExemplaireCreateTestCase
+from .exemplaire_list_test import ExemplaireListTestCase
