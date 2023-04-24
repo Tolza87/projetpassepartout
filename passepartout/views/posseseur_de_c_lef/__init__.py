@@ -1,0 +1,5 @@
+from .posseseur_de_c_lef_delete import PosseseurDeCLefDeleteView
+from .posseseur_de_c_lef_update import PosseseurDeCLefUpdateView
+from .posseseur_de_c_lef_detail import PosseseurDeCLefDetailView
+from .posseseur_de_c_lef_create import PosseseurDeCLefCreateView
+from .posseseur_de_c_lef_list import PosseseurDeCLefListView

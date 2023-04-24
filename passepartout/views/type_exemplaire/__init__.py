@@ -1,0 +1,5 @@
+from .type_exemplaire_delete import TypeExemplaireDeleteView
+from .type_exemplaire_update import TypeExemplaireUpdateView
+from .type_exemplaire_detail import TypeExemplaireDetailView
+from .type_exemplaire_create import TypeExemplaireCreateView
+from .type_exemplaire_list import TypeExemplaireListView
