@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2 class="form-title">Roles</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>Roles</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for Roles in object_list %}
+        <tr>
+            <td>{{ Roles }}</td>
+            <td><a href="{% url "Roles_detail" Roles.id %}">view</a></td>
+            <td><a href="{% url "Roles_update" Roles.id %}">edit</a></td>
+            <td><a href="{% url "Roles_delete" Roles.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "roles_create" %}">New</a>
+</div>
+
+
+{% end block content %}

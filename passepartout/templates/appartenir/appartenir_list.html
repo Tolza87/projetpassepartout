@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2 class="form-title">Appartenir</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>Appartenir</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for Appartenir in object_list %}
+        <tr>
+            <td>{{ Appartenir }}</td>
+            <td><a href="{% url "Appartenir_detail" Appartenir.id %}">view</a></td>
+            <td><a href="{% url "Appartenir_update" Appartenir.id %}">edit</a></td>
+            <td><a href="{% url "Appartenir_delete" Appartenir.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "appartenir_create" %}">New</a>
+</div>
+
+
+{% end block content %}

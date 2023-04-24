@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2 class="form-title">Ouvre</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>Ouvre</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for Ouvre in object_list %}
+        <tr>
+            <td>{{ Ouvre }}</td>
+            <td><a href="{% url "Ouvre_detail" Ouvre.id %}">view</a></td>
+            <td><a href="{% url "Ouvre_update" Ouvre.id %}">edit</a></td>
+            <td><a href="{% url "Ouvre_delete" Ouvre.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "ouvre_create" %}">New</a>
+</div>
+
+
+{% end block content %}

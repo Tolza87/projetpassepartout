@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2 class="form-title">PosseseurDeCLef</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>PosseseurDeCLef</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for PosseseurDeCLef in object_list %}
+        <tr>
+            <td>{{ PosseseurDeCLef }}</td>
+            <td><a href="{% url "PosseseurDeCLef_detail" PosseseurDeCLef.id %}">view</a></td>
+            <td><a href="{% url "PosseseurDeCLef_update" PosseseurDeCLef.id %}">edit</a></td>
+            <td><a href="{% url "PosseseurDeCLef_delete" PosseseurDeCLef.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "posseseur_de_c_lef_create" %}">New</a>
+</div>
+
+
+{% end block content %}

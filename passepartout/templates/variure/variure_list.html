@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2 class="form-title">Variure</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>Variure</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for Variure in object_list %}
+        <tr>
+            <td>{{ Variure }}</td>
+            <td><a href="{% url "Variure_detail" Variure.id %}">view</a></td>
+            <td><a href="{% url "Variure_update" Variure.id %}">edit</a></td>
+            <td><a href="{% url "Variure_delete" Variure.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "variure_create" %}">New</a>
+</div>
+
+
+{% end block content %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2 class="form-title">Barillet</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>Barillet</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for Barillet in object_list %}
+        <tr>
+            <td>{{ Barillet }}</td>
+            <td><a href="{% url "Barillet_detail" Barillet.id %}">view</a></td>
+            <td><a href="{% url "Barillet_update" Barillet.id %}">edit</a></td>
+            <td><a href="{% url "Barillet_delete" Barillet.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "barillet_create" %}">New</a>
+</div>
+
+
+{% end block content %}
