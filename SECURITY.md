@@ -9,8 +9,8 @@
 
 ## Reporting a Vulnerability
 
-BDD connection not ready
-Clear datas
-No RegEx
-No prep request
+BDD connection not ready,
+Clear datas,
+No RegEx,
+No prep request,
 
